@@ -78,7 +78,7 @@
   </header>
 
   <div class="intro-video">
-    <iframe width="90%" height="315" src="https://www.youtube.com/watch?v=6TYVJm1fEYc&t=47s" frameborder="0" allowfullscreen></iframe>
+    <iframe width="90%" height="315" src="https://pin.it/56oDCiHEJ" frameborder="0" allowfullscreen></iframe>
     <p>Assista ao vídeo acima para entender como funciona nossa plataforma IPTV!</p>
   </div>
 

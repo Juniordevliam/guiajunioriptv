@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <div class="logo">JS <span>XPLAY</span></div>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ELITE PLAY - Sua IPTV Completa</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .logo span {
+    color: red;
+  }
+</style>
   <style>
     body {
       margin: 0;

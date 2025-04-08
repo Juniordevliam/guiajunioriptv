@@ -13,7 +13,7 @@
       color: #fff;
     }
     header {
-      background-image: url('https://images.unsplash.com/photo-1603785221055-4b4a80dcf066?fit=crop&w=1920&q=80');
+      background-image: url('https://e0.pxfuel.com/wallpapers/131/465/desktop-wallpaper-live-tv-television.jpg');
       background-size: cover;
       background-position: center;
       padding: 100px 20px;

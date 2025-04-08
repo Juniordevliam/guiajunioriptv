@@ -153,7 +153,7 @@
 
   <div class="section">
     <h2>Assista quando quiser</h2>
-    <img src="https://vodlix.com/assets/website_images/home/hero-homepage-1.png" alt="dispositivos">
+    <img src="https://vodlix.b-cdn.net/assets/image-4.png" alt="dispositivos">
   </div>
 
   <div class="section">

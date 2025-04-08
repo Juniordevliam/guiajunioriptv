@@ -158,7 +158,7 @@
 
   <div class="section">
     <h2>Brasileirão e esportes</h2>
-    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/soccer-1867161_960_720.jpg" alt="esportes">
+    <img src="https://tntsports.com.br/__export/1681562991776/sites/esporteinterativo/img/2023/04/15/14-04-futbr-ed-2.png_554688468.png" alt="esportes">
   </div>
 
   <div class="section">

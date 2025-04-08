@@ -59,6 +59,7 @@
     .section img {
       max-width: 100%;
       height: auto;
+      border-radius: 10px;
     }
     .plans {
       display: flex;
@@ -166,6 +167,10 @@
   <div class="section faq">
     <h2>Perguntas frequentes</h2>
     <p><strong>O que é IPTV via app?</strong><br>É um serviço de transmissão de TV pela internet sem necessidade de antena.</p>
+    <p><strong>Quais dispositivos são compatíveis?</strong><br>TVs Smart Samsung e LG, Android TV Box, Roku, AOC antiga, Philco, PC e celular.</p>
+    <p><strong>Como faço para instalar?</strong><br>Você receberá um tutorial personalizado com passo a passo e link para baixar o app certo para seu dispositivo.</p>
+    <p><strong>Tem suporte se eu tiver dúvidas?</strong><br>Sim! Nosso atendimento é direto via WhatsApp com suporte rápido.</p>
+    <p><strong>Posso assistir canais de esportes e campeonatos?</strong><br>Sim, você terá acesso a canais de esportes com jogos ao vivo.</p>
   </div>
 
   <footer>

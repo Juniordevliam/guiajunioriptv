@@ -143,7 +143,7 @@
 
   <div class="section">
     <h2>Aproveite na TV</h2>
-    <img src="https://simplifica.efacil.com.br/wp-content/uploads/2023/03/1.11.jpg" alt="tv devices">
+    <img src="https://vodlix.com/assets/customer-profiles.png" alt="tv devices">
   </div>
 
   <div class="section">

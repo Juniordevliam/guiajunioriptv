@@ -129,7 +129,7 @@
 
   <div class="section">
     <h2>Aproveite na TV</h2>
-    <img src="https://cdn.pixabay.com/photo/2018/01/18/07/00/tv-3084292_960_720.jpg" alt="tv devices">
+    <img src="https://simplifica.efacil.com.br/wp-content/uploads/2023/03/1.11.jpg">
   </div>
 
   <div class="section">

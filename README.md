@@ -1,116 +1,235 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS XPLAY IPTV - Assista Tudo!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <link rel="icon" href="https://img.icons8.com/fluency/48/monitor.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS XPLAY - Sua TV Online Premium</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
     }
-    .whatsapp-float {
+
+    body {
+      background-color: #141414;
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #e50914;
+      font-size: 2rem;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1603481546579-81b5ecb7cb9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 10rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: #e50914;
+      padding: 1rem 2rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #b20710;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .plan {
+      background-color: #222;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .plan h3 {
+      font-size: 1.5rem;
+      color: #e50914;
+    }
+
+    .plan ul {
+      list-style: none;
+      margin: 1rem 0;
+      padding: 0;
+      text-align: left;
+    }
+
+    .plan ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .plan a {
+      margin-top: 1rem;
+      display: inline-block;
+    }
+
+    .footer {
+      background-color: #000;
+      color: #999;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .floating-whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 1rem;
+      border-radius: 50%;
+      font-size: 2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       z-index: 999;
-    }
-    .plan-card:hover {
-      transform: scale(1.05);
-      transition: 0.3s;
     }
   </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
 
-  <!-- Header -->
-  <header class="bg-gray-800 py-6 shadow-lg">
-    <div class="container mx-auto px-4 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <img src="https://img.icons8.com/ios-filled/50/ffffff/tv.png" alt="Logo" class="w-10 h-10">
-        <h1 class="text-2xl font-bold text-green-400">JS XPLAY IPTV</h1>
-      </div>
-      <nav class="space-x-6">
-        <a href="#planos" class="hover:text-green-400">Planos</a>
-        <a href="#instalacao" class="hover:text-green-400">Guia de Instalação</a>
-        <a href="#contato" class="hover:text-green-400">Contato</a>
-      </nav>
-    </div>
+<body>
+  <header>
+    <h1>JS XPLAY</h1>
+    <nav>
+      <a href="#planos">Planos</a>
+      <a href="#instalacao">Guia de Instalação</a>
+      <a href="https://wa.me/5577999771690" target="_blank">Contato</a>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="text-center py-12 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1606813909358-908ff3db0943?auto=format&fit=crop&w=1600&q=80');">
-    <div class="bg-black bg-opacity-70 p-8 rounded-xl max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold mb-4 text-green-400">A melhor experiência IPTV do Brasil</h2>
-      <p class="text-lg mb-6">Mais de <strong>2.800 canais</strong>, <strong>20.000 filmes</strong> e <strong>8.400 séries</strong> disponíveis para você!</p>
-      <a href="https://wa.me/5577999771690?text=Quero%20testar%20grátis%20a%20lista%20IPTV" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl">Testar Grátis Agora</a>
-    </div>
+  <section class="hero">
+    <h2>TV Online Premium em Alta Definição</h2>
+    <p>Mais de 2.800 canais, 20 mil filmes e 8.400 séries ao seu alcance</p>
+    <a href="https://wa.me/5577999771690?text=Quero%20testar%20grátis%20a%20lista%20IPTV" class="btn">Teste Grátis</a>
   </section>
 
-  <!-- Planos -->
-  <section id="planos" class="py-16 bg-gray-900">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-green-400 mb-8">Planos e Benefícios</h2>
-      <p class="mb-6 text-lg text-gray-300">Todos os planos incluem acesso total a canais nacionais e internacionais, conteúdo adulto (opcional), qualidade Full HD, 4K em alguns conteúdos, estabilidade, suporte rápido via WhatsApp e compatibilidade com vários dispositivos.</p>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="plan-card bg-gray-800 p-6 rounded-xl shadow-lg">
-          <h3 class="text-xl font-bold text-green-300">1 Mês</h3>
-          <p class="text-2xl mt-2">R$ 25,00</p>
-          <a href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%201%20mês" class="mt-4 inline-block bg-green-500 hover:bg-green-600 px-5 py-2 rounded-full font-bold">Assinar</a>
-        </div>
-
-        <div class="plan-card bg-gray-800 p-6 rounded-xl shadow-lg">
-          <h3 class="text-xl font-bold text-green-300">3 Meses</h3>
-          <p class="text-2xl mt-2">R$ 65,00</p>
-          <a href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%203%20meses" class="mt-4 inline-block bg-green-500 hover:bg-green-600 px-5 py-2 rounded-full font-bold">Assinar</a>
-        </div>
-
-        <div class="plan-card bg-gray-800 p-6 rounded-xl shadow-lg">
-          <h3 class="text-xl font-bold text-green-300">1 Ano</h3>
-          <p class="text-2xl mt-2">R$ 229,90</p>
-          <a href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%201%20ano" class="mt-4 inline-block bg-green-500 hover:bg-green-600 px-5 py-2 rounded-full font-bold">Assinar</a>
-        </div>
+  <section class="section" id="planos">
+    <h2>Escolha seu Plano</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>1 Mês - R$25</h3>
+        <ul>
+          <li>+2.800 canais (abertos, fechados, esportes)</li>
+          <li>+20.000 filmes atualizados</li>
+          <li>+8.400 séries completas</li>
+          <li>Suporte rápido via WhatsApp</li>
+          <li>Qualidade HD e Full HD</li>
+        </ul>
+        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%201%20mês">Assinar Agora</a>
+      </div>
+      <div class="plan">
+        <h3>2 Meses - R$45</h3>
+        <ul>
+          <li>Todos os benefícios do plano mensal</li>
+          <li>Desconto exclusivo</li>
+        </ul>
+        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%202%20meses">Assinar Agora</a>
+      </div>
+      <div class="plan">
+        <h3>3 Meses - R$65</h3>
+        <ul>
+          <li>Todos os benefícios + bônus exclusivos</li>
+        </ul>
+        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%203%20meses">Assinar Agora</a>
+      </div>
+      <div class="plan">
+        <h3>6 Meses - R$120</h3>
+        <ul>
+          <li>Acesso prolongado com super desconto</li>
+        </ul>
+        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%206%20meses">Assinar Agora</a>
+      </div>
+      <div class="plan">
+        <h3>1 Ano - R$229,90</h3>
+        <ul>
+          <li>Plano mais completo com economia máxima</li>
+        </ul>
+        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20anual">Assinar Agora</a>
       </div>
     </div>
   </section>
 
-  <!-- Guia de Instalação -->
-  <section id="instalacao" class="py-16 bg-gray-800">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-green-400 mb-6">Guia de Instalação</h2>
-      <p class="mb-8 text-gray-300">Selecione seu dispositivo para ver o vídeo de instalação passo a passo.</p>
-      <div class="grid md:grid-cols-4 gap-4 text-left">
-        <a href="https://www.youtube.com/watch?v=EXEMPLO1" target="_blank" class="bg-gray-700 hover:bg-gray-600 p-4 rounded-xl">TV LG - MAX PLAYER</a>
-        <a href="https://www.youtube.com/watch?v=EXEMPLO2" target="_blank" class="bg-gray-700 hover:bg-gray-600 p-4 rounded-xl">TV Samsung - SmartOne ou Max Player</a>
-        <a href="https://www.youtube.com/watch?v=EXEMPLO3" target="_blank" class="bg-gray-700 hover:bg-gray-600 p-4 rounded-xl">TV Box - Max Player</a>
-        <a href="https://www.youtube.com/watch?v=EXEMPLO4" target="_blank" class="bg-gray-700 hover:bg-gray-600 p-4 rounded-xl">Celular Android - IBOR PRO</a>
-        <a href="https://www.youtube.com/watch?v=EXEMPLO5" target="_blank" class="bg-gray-700 hover:bg-gray-600 p-4 rounded-xl">PC - Max Player</a>
-        <a href="https://www.youtube.com/watch?v=EXEMPLO6" target="_blank" class="bg-gray-700 hover:bg-gray-600 p-4 rounded-xl">Philco / AOC antiga - Cloudy</a>
+  <section class="section" id="instalacao">
+    <h2>Guia de Instalação</h2>
+    <p>Escolha seu dispositivo para ver o passo a passo</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>TV Samsung</h3>
+        <a class="btn" href="https://www.youtube.com/watch?v=EXEMPLO1">Ver Instalação</a>
+      </div>
+      <div class="plan">
+        <h3>TV LG</h3>
+        <a class="btn" href="https://www.youtube.com/watch?v=EXEMPLO2">Ver Instalação</a>
+      </div>
+      <div class="plan">
+        <h3>TV Box</h3>
+        <a class="btn" href="https://www.youtube.com/watch?v=EXEMPLO3">Ver Instalação</a>
+      </div>
+      <div class="plan">
+        <h3>Celular Android</h3>
+        <a class="btn" href="https://www.youtube.com/watch?v=EXEMPLO4">Ver Instalação</a>
+      </div>
+      <div class="plan">
+        <h3>PC / Windows</h3>
+        <a class="btn" href="https://www.youtube.com/watch?v=EXEMPLO5">Ver Instalação</a>
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="py-16 bg-gray-900">
-    <div class="text-center">
-      <h2 class="text-3xl font-bold text-green-400 mb-4">Fale com a gente!</h2>
-      <p class="mb-6">Atendimento rápido via WhatsApp</p>
-      <a href="https://wa.me/5577999771690" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-bold text-lg">Chamar no WhatsApp</a>
-    </div>
-  </section>
+  <footer class="footer">
+    <p>&copy; 2025 JS XPLAY - Todos os direitos reservados.</p>
+  </footer>
 
-  <!-- Chat WhatsApp Flutuante -->
-  <a class="whatsapp-float" href="https://wa.me/5577999771690" target="_blank">
-    <img src="https://img.icons8.com/color/96/whatsapp.png" alt="WhatsApp Chat" class="w-14 h-14">
+  <a href="https://wa.me/5577999771690" target="_blank" class="floating-whatsapp">
+    <i class="fab fa-whatsapp"></i>
   </a>
-
-  <!-- Scroll Reveal Animation -->
-  <script>
-    ScrollReveal().reveal('section', { delay: 300, distance: '50px', origin: 'bottom', duration: 1000 });
-  </script>
 </body>
+
 </html>

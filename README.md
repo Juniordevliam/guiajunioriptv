@@ -1,96 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS XPLAY - Sua IPTV Completa</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELITE PLAY - Sua IPTV Completa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Roboto', sans-serif;
       background-color: #000;
       color: #fff;
     }
     header {
-      background-color: #111;
-      padding: 40px 20px 80px;
+      background-image: url('https://images.unsplash.com/photo-1603785221055-4b4a80dcf066?fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
       text-align: center;
       position: relative;
     }
-    header h1 {
-      font-size: 2.5rem;
-      color: #FFD700;
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
     }
-    .countdown {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      background-color: #FFD700;
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 10px;
-      display: inline-block;
+    header > * {
+      position: relative;
+      z-index: 1;
     }
-    .cta-button {
-      margin-top: 20px;
-      padding: 15px 25px;
-      background-color: #FFD700;
-      color: #000;
-      font-weight: bold;
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    h1 span {
+      color: red;
+    }
+    .btn-main {
+      background-color: red;
+      color: #fff;
+      padding: 15px 30px;
       border: none;
       border-radius: 5px;
-      font-size: 1.2rem;
+      font-size: 1rem;
+      margin-top: 20px;
       cursor: pointer;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      display: inline-block;
     }
-    .cta-button:hover {
-      background-color: #e6c200;
+    .section {
+      padding: 60px 20px;
+      text-align: center;
     }
-    .hero-image {
+    .section img {
       max-width: 100%;
       height: auto;
-      display: block;
-      margin: 20px auto;
     }
-    @media screen and (max-width: 768px) {
-      .hero-image {
-        width: 100%;
-        height: auto;
-      }
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
-    .whatsapp-chat {
+    .plan {
+      background-color: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+    }
+    .plan h3 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    .plan p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    .plan ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+    .plan ul li {
+      margin: 5px 0;
+    }
+    .faq {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      padding: 15px;
-      text-align: center;
-      font-size: 24px;
-      z-index: 1000;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
+      z-index: 999;
     }
-    .whatsapp-chat:hover {
-      transform: scale(1.1);
+    .whatsapp img {
+      width: 60px;
+      height: 60px;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    .countdown {
+      background-color: red;
+      color: #fff;
+      padding: 10px;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>JS XPLAY - Assine com Desconto por Tempo Limitado!</h1>
+    <h1>Canais, Filmes, Séries e muito mais. <span>Sem limites.</span></h1>
     <div class="countdown" id="countdown"></div>
-    <a href="https://wa.me/5577999771690?text=Quero%20testar%20a%20IPTV%20JS%20XPLAY%20gratuitamente" class="cta-button">TESTAR GRÁTIS</a>
+    <a href="https://wa.me/5577999771690?text=Quero%20assinar%20a%20ELITE%20PLAY" class="btn-main">QUERO ASSISTIR TODOS OS CANAIS</a>
   </header>
 
-  <img src="https://images.unsplash.com/photo-1596727147705-3ebca3b7d88d?fit=crop&w=1200&q=80" alt="Imagem representando IPTV com filmes e esportes" class="hero-image">
+  <div class="section">
+    <h2>Aproveite na TV</h2>
+    <img src="https://cdn.pixabay.com/photo/2018/01/18/07/00/tv-3084292_960_720.jpg" alt="tv devices">
+  </div>
 
-  <a href="https://wa.me/5577999771690?text=Olá%2C%20quero%20tirar%20uma%20dúvida%20sobre%20a%20IPTV%20JS%20XPLAY" class="whatsapp-chat" title="Fale conosco no WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+  <div class="section">
+    <h2>Assista filmes e séries</h2>
+    <img src="https://cdn.pixabay.com/photo/2021/09/01/19/22/television-6590093_960_720.jpg" alt="filmes">
+  </div>
+
+  <div class="section">
+    <h2>Assista quando quiser</h2>
+    <img src="https://cdn.pixabay.com/photo/2016/03/23/01/12/technology-1276261_960_720.jpg" alt="dispositivos">
+  </div>
+
+  <div class="section">
+    <h2>Brasileirão e esportes</h2>
+    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/soccer-1867161_960_720.jpg" alt="esportes">
+  </div>
+
+  <div class="section">
+    <h2>Escolha seu plano</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Mensal</h3>
+        <p><s>R$ 50,00</s> <strong>R$ 25,00</strong></p>
+        <ul>
+          <li>Conteúdo adulto incluso</li>
+          <li>Canais abertos e fechados</li>
+          <li>Atualização automática</li>
+          <li>Suporte técnico</li>
+        </ul>
+        <a class="btn-main" href="https://wa.me/5577999771690?text=Quero%20o%20plano%20mensal%20da%20ELITE%20PLAY">ASSINAR</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section faq">
+    <h2>Perguntas frequentes</h2>
+    <p><strong>O que é IPTV via app?</strong><br>É um serviço de transmissão de TV pela internet sem necessidade de antena.</p>
+  </div>
+
+  <footer>
+    <p>© 2025 ELITE PLAY - Todos os direitos reservados.</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/5577999771690?text=Quero%20assinar%20a%20ELITE%20PLAY" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
   <script>
@@ -99,24 +182,15 @@
       setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = `Promoção termina em: ${minutes}:${seconds}`;
-
-        if (--timer < 0) {
-          timer = duration;
-        }
+        display.textContent = `Promoção termina em: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        if (--timer < 0) timer = duration;
       }, 1000);
     }
-
     window.onload = function () {
-      let countdownMinutes = 15 * 60; // 15 minutos
+      let countdownMinutes = 15 * 60;
       let display = document.getElementById('countdown');
       startCountdown(countdownMinutes, display);
     };
   </script>
-
 </body>
 </html>

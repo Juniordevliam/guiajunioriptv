@@ -2,152 +2,228 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS XPLAY - Sua IPTV Completa</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS XPLAY - Sua Plataforma IPTV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
-    .countdown {
-      font-size: 1.5rem;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1607672401803-0d7ec3fcd6dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header img.logo {
+      max-width: 180px;
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: #e50914;
+      padding: 0.8rem 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #b00710;
+    }
+
+    section img.responsive-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    section.benefits, section.plans, section.guide {
+      padding: 3rem 1rem;
+      text-align: center;
+      background-color: #111;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .benefits .card-container,
+    .plans .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
+
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+    }
+
+    .guide .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .guide a {
+      background-color: #e50914;
+      color: white;
+      padding: 0.7rem 1.3rem;
+      border-radius: 5px;
+      text-decoration: none;
       font-weight: bold;
     }
-    .whatsapp-float {
+
+    .whatsapp-chat {
       position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
       width: 60px;
       height: 60px;
-      bottom: 40px;
-      right: 40px;
-      background-color: #e50914;
-      color: #fff;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 0 0 10px #000;
     }
-    .whatsapp-float i {
-      margin-top: 16px;
-    }
-    .netflix-banner {
-      background: url('https://cdn.pixabay.com/photo/2020/05/06/06/56/home-cinema-5136777_1280.jpg') center center / cover no-repeat;
-      height: 100vh;
-    }
+
     @media (max-width: 768px) {
-      .netflix-banner {
-        background-position: top center;
-        height: 70vh;
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 
-<body class="bg-black text-white">
-  <!-- Banner estilo Netflix -->
-  <header class="netflix-banner flex items-center justify-center px-4">
-    <div class="text-center bg-black bg-opacity-60 p-6 rounded-xl">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">JS XPLAY</h1>
-      <p class="text-lg md:text-xl mb-6">+2.800 canais | +20.000 filmes | +8.400 séries em uma só assinatura!</p>
-      <a href="#planos" class="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-full text-lg font-semibold">Conheça os Planos</a>
-    </div>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/180x80?text=JS+XPLAY" alt="JS XPLAY Logo" class="logo">
+    <h1>Filmes, Séries e Canais ao Vivo em uma só plataforma</h1>
+    <p>Mais de 2.800 canais, 20 mil filmes e 8.400 séries disponíveis 24h</p>
+    <a href="https://wa.me/5577999771690?text=Quero+testar+o+IPTV+gratis!" class="btn">TESTAR GRÁTIS</a>
   </header>
 
-  <!-- Planos -->
-  <section id="planos" class="py-16 px-6 text-center">
-    <h2 class="text-4xl font-bold mb-10">Planos e Preços</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="border border-red-500 p-6 rounded-xl bg-gray-900">
-        <h3 class="text-2xl font-bold">1 Mês</h3>
-        <p class="text-xl text-red-400 mt-2">R$ 25,00</p>
-        <ul class="mt-4 text-sm text-left">
-          <li>✔ Acesso Full HD</li>
-          <li>✔ +2.800 Canais</li>
-          <li>✔ +20.000 Filmes</li>
-          <li>✔ +8.400 Séries</li>
-          <li>✔ Sem travamentos</li>
-          <li>✔ Suporte dedicado</li>
-        </ul>
-        <a href="https://wa.me/5577999771690?text=Quero%20o%20plano%20de%201%20mês" class="mt-4 inline-block bg-red-600 hover:bg-red-700 py-2 px-4 rounded-full">Assinar Agora</a>
+  <section>
+    <img src="https://images.unsplash.com/photo-1608534509186-d396abba0e2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Banner de entretenimento" class="responsive-img">
+  </section>
+
+  <section class="benefits">
+    <h2>Vantagens Exclusivas</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>+2.800 Canais</h3>
+        <p>Incluindo esportes, filmes, infantis, documentários, notícias e muito mais.</p>
       </div>
-      <div class="border border-red-500 p-6 rounded-xl bg-gray-900">
-        <h3 class="text-2xl font-bold">3 Meses <span class="text-sm text-green-400">(13% OFF)</span></h3>
-        <p class="text-xl text-red-400 mt-2">R$ 65,00</p>
-        <ul class="mt-4 text-sm text-left">
-          <li>✔ Todos os benefícios do plano mensal</li>
-        </ul>
-        <a href="https://wa.me/5577999771690?text=Quero%20o%20plano%20de%203%20meses" class="mt-4 inline-block bg-red-600 hover:bg-red-700 py-2 px-4 rounded-full">Assinar Agora</a>
+      <div class="card">
+        <h3>+20.000 Filmes</h3>
+        <p>Lançamentos e clássicos em alta definição com áudio e legenda.</p>
       </div>
-      <div class="border border-red-500 p-6 rounded-xl bg-gray-900">
-        <h3 class="text-2xl font-bold">1 Ano <span class="text-sm text-green-400">(24% OFF)</span></h3>
-        <p class="text-xl text-red-400 mt-2">R$ 229,90</p>
-        <ul class="mt-4 text-sm text-left">
-          <li>✔ Todos os benefícios + estabilidade garantida</li>
-        </ul>
-        <a href="https://wa.me/5577999771690?text=Quero%20o%20plano%20anual" class="mt-4 inline-block bg-red-600 hover:bg-red-700 py-2 px-4 rounded-full">Assinar Agora</a>
+      <div class="card">
+        <h3>+8.400 Séries</h3>
+        <p>Temporadas completas das principais plataformas de streaming.</p>
       </div>
     </div>
   </section>
 
-  <!-- Benefícios -->
-  <section class="py-16 px-6 bg-gray-800 text-center">
-    <h2 class="text-3xl font-bold mb-8">Benefícios Exclusivos</h2>
-    <p class="mb-4 text-gray-300">Economize comparado com plataformas como:</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-      <div>
-        <h3 class="text-xl font-semibold">Netflix</h3>
-        <p>R$ 55,90/mês</p>
+  <section class="plans">
+    <h2>Planos com Desconto</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>1 Mês - R$ 25,00</h3>
+        <p>Acesso completo, suporte 24h, conteúdo full HD. (0% desconto)</p>
+        <a href="https://wa.me/5577999771690?text=Quero+o+plano+mensal+de+R$25,00" class="btn">Escolher plano</a>
       </div>
-      <div>
-        <h3 class="text-xl font-semibold">Amazon Prime</h3>
-        <p>R$ 14,90/mês</p>
+      <div class="card">
+        <h3>2 Meses - R$ 45,00</h3>
+        <p>Economize 10% com suporte e canais premium.</p>
+        <a href="https://wa.me/5577999771690?text=Quero+o+plano+de+2+meses+por+R$45,00" class="btn">Escolher plano</a>
       </div>
-      <div>
-        <h3 class="text-xl font-semibold">Disney+, HBO, Telecine...</h3>
-        <p>+R$ 100,00/mês</p>
+      <div class="card">
+        <h3>3 Meses - R$ 65,00</h3>
+        <p>Desconto de 13%. Conteúdo completo e atualizações diárias.</p>
+        <a href="https://wa.me/5577999771690?text=Quero+o+plano+trimestral+de+R$65,00" class="btn">Escolher plano</a>
       </div>
-    </div>
-    <p class="mt-6 text-green-400 font-semibold">Com JS XPLAY, você tem tudo isso incluso por uma fração do preço!</p>
-  </section>
-
-  <!-- Guia de Instalação -->
-  <section id="guia" class="py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6">Guia de Instalação</h2>
-    <p class="mb-4">Escolha seu dispositivo e siga o passo a passo:</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <a href="https://www.youtube.com/watch?v=EXEMPLO1" class="bg-red-700 p-4 rounded-lg">TV LG - MAX PLAYER</a>
-      <a href="https://www.youtube.com/watch?v=EXEMPLO2" class="bg-red-700 p-4 rounded-lg">TV Samsung - SMARTONE</a>
-      <a href="https://www.youtube.com/watch?v=EXEMPLO3" class="bg-red-700 p-4 rounded-lg">TV Box - IBOR PRO</a>
-      <a href="https://www.youtube.com/watch?v=EXEMPLO4" class="bg-red-700 p-4 rounded-lg">PC - MAX PLAYER</a>
+      <div class="card">
+        <h3>6 Meses - R$ 120,00</h3>
+        <p>Desconto de 20%. Atendimento prioritário e acesso vitalício por período.</p>
+        <a href="https://wa.me/5577999771690?text=Quero+o+plano+semestral+de+R$120,00" class="btn">Escolher plano</a>
+      </div>
+      <div class="card">
+        <h3>12 Meses - R$ 229,90</h3>
+        <p>Desconto de 24%. Plano completo com renovação facilitada.</p>
+        <a href="https://wa.me/5577999771690?text=Quero+o+plano+anual+de+R$229,90" class="btn">Escolher plano</a>
+      </div>
     </div>
   </section>
 
-  <!-- Contagem Regressiva -->
-  <section class="py-10 text-center bg-black">
-    <h2 class="text-2xl font-bold mb-2">Oferta Especial se encerra em:</h2>
-    <div id="countdown" class="countdown text-red-500"></div>
+  <section class="guide">
+    <h2>Guia de Instalação</h2>
+    <div class="buttons">
+      <a href="https://youtu.be/XO82hctuvl0" target="_blank">TV SAMSUNG</a>
+      <a href="https://youtu.be/XO82hctuvl0" target="_blank">TV LG</a>
+      <a href="https://youtu.be/XO82hctuvl0" target="_blank">TV ROKU</a>
+      <a href="https://youtu.be/XO82hctuvl0" target="_blank">TV BOX</a>
+      <a href="https://youtu.be/XO82hctuvl0" target="_blank">PHILCO / AOC ANTIGA</a>
+      <a href="https://youtu.be/XO82hctuvl0" target="_blank">PC</a>
+      <a href="https://youtu.be/XO82hctuvl0" target="_blank">CELULAR</a>
+    </div>
   </section>
 
-  <!-- Chat WhatsApp -->
-  <a href="https://wa.me/5577999771690" class="whatsapp-float" target="_blank">
+  <a class="whatsapp-chat" href="https://wa.me/5577999771690" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
-
-  <script>
-    const countdownDate = new Date().getTime() + 24 * 60 * 60 * 1000;
-    const timer = setInterval(function () {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("countdown").innerHTML = `${hours}h ${minutes}m ${seconds}s`;
-      if (distance < 0) {
-        clearInterval(timer);
-        document.getElementById("countdown").innerHTML = "Promoção encerrada";
-      }
-    }, 1000);
-  </script>
-
 </body>
 
 </html>

@@ -235,28 +235,58 @@
   <p><em>Economia: +R$ 400 vs. Netflix + Telecine + Premiere</em></p>
 </div>
 
-<div class="plan">
-  <div class="plan-icon">💎</div>
-  <h3>Plano Semestral</h3>
-  <p><strong>R$ 120,00</strong>/6 meses</p>
-  <ul>
-    <li>Tudo do trimestral incluso</li>
-    <li>Instalação gratuita</li>
-    <li>Suporte VIP</li>
-  </ul>
-  <p><em>Economia: +R$ 900 no semestre</em></p>
-</div>
+<div class="plans">
 
-<div class="plan">
-  <div class="plan-icon">🏆</div>
-  <h3>Plano Anual</h3>
-  <p><strong>R$ 220,00</strong>/ano</p>
-  <ul>
-    <li>Todos os conteúdos liberados</li>
-    <li>Atualizações automáticas</li>
-    <li>Suporte completo por 12 meses</li>
-  </ul>
-  <p><em>Economia: +R$ 1800 comparado a Netflix, Premiere, Disney+</em></p>
+  <div class="plan">
+    <div class="plan-icon">📺</div>
+    <h3>Plano Mensal</h3>
+    <p><strong>R$ 25,00</strong>/mês</p>
+    <ul>
+      <li>+1000 canais ao vivo</li>
+      <li>Filmes e séries atualizados</li>
+      <li>Conteúdo adulto incluso</li>
+      <li>Esportes e canais Premiere</li>
+      <li>Suporte via WhatsApp</li>
+    </ul>
+    <a class="btn-main" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20Plano%20Mensal%20da%20ELITE%20PLAY!">Assinar Mensal</a>
+  </div>
+
+  <div class="plan popular">
+    <div class="plan-icon">🔥</div>
+    <h3>Plano Trimestral</h3>
+    <p><strong>R$ 65,00</strong>/3 meses</p>
+    <ul>
+      <li>Tudo do mensal incluso</li>
+      <li>Estabilidade premium</li>
+      <li>Suporte prioritário</li>
+      <li>App recomendado grátis</li>
+    </ul>
+    <a class="btn-main" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20Plano%20Trimestral%20da%20ELITE%20PLAY!">Assinar Trimestral</a>
+  </div>
+
+  <div class="plan">
+    <div class="plan-icon">💎</div>
+    <h3>Plano Semestral</h3>
+    <p><strong>R$ 120,00</strong>/6 meses</p>
+    <ul>
+      <li>Tudo do trimestral incluso</li>
+      <li>Instalação gratuita</li>
+      <li>Suporte VIP</li>
+    </ul>
+    <a class="btn-main" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20Plano%20Semestral%20da%20ELITE%20PLAY!">Assinar Semestral</a>
+  </div>
+
+  <div class="plan">
+    <div class="plan-icon">🏆</div>
+    <h3>Plano Anual</h3>
+    <p><strong>R$ 220,00</strong>/ano</p>
+    <ul>
+      <li>Todos os conteúdos liberados</li>
+      <li>Atualizações automáticas</li>
+      <li>Suporte completo por 12 meses</li>
+    </ul>
+    <a class="btn-main" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20Plano%20Anual%20da%20ELITE%20PLAY!">Assinar Anual</a>
+  </div>
 </div>
 
 <div class="comparison">

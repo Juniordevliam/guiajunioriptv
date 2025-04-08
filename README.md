@@ -134,7 +134,7 @@
 
   <div class="section">
     <h2>Assista filmes e séries</h2>
-    <img src="https://cdn.pixabay.com/photo/2021/09/01/19/22/television-6590093_960_720.jpg" alt="filmes">
+    <img src="https://bmcnews.com.br/wp-content/uploads/2024/09/netflix_1726847503266-1.jpg" alt="filmes">
   </div>
 
   <div class="section">

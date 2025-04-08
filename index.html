@@ -1,135 +1,214 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transforme sua TV com IPTV Premium</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS XPLAY - IPTV Premium</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Roboto', sans-serif; background: #f4f4f4; color: #333; }
-    header { background: linear-gradient(to right, #141E30, #243B55); color: white; padding: 60px 20px; text-align: center; }
-    header h1 { font-size: 36px; margin-bottom: 10px; }
-    header p { font-size: 18px; }
-    section { padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
-    .plans, .install, .contact { margin-top: 60px; }
-    .plan-cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .card { background: white; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 30px; width: 280px; text-align: center; transition: 0.3s; }
-    .card:hover { transform: translateY(-5px); }
-    .card h3 { font-size: 24px; margin-bottom: 10px; }
-    .price { font-size: 28px; color: #1e88e5; margin: 10px 0; }
-    .benefits { font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
-    .btn { background: #1e88e5; color: white; padding: 12px 20px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.3s; }
-    .btn:hover { background: #1565c0; }
-    .images { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 40px; }
-    .images img { width: 300px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    .install .devices { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .device { background: #fff; padding: 20px; border-radius: 10px; width: 260px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; }
-    .device h4 { margin-bottom: 10px; }
-    .footer { text-align: center; padding: 40px 20px; background: #222; color: #bbb; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(to right, #ff4e00, #ec9f05);
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-height: 80px;
+    }
+    h1 {
+      margin: 10px 0;
+      font-size: 2rem;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .plan {
+      background: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 10px #ec9f05;
+    }
+    .plan h3 {
+      color: #ec9f05;
+    }
+    .plan p {
+      margin: 10px 0;
+    }
+    .plan a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: #ec9f05;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .guide, .contact {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    .device {
+      margin: 10px 0;
+    }
+    .device strong {
+      color: #ec9f05;
+    }
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .countdown {
+      font-size: 1.5rem;
+      color: #ff4e00;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>IPTV Premium: Sua TV com Muito Mais!</h1>
-    <p>Filmes, séries, canais ao vivo, esportes e muito mais – em qualquer dispositivo!</p>
+    <img src="logo.png" alt="Logo JS XPLAY" />
+    <h1>JS XPLAY - Sua IPTV Premium</h1>
   </header>
 
-  <section class="plans">
-    <h2 style="text-align:center; margin-bottom:30px;">Escolha seu Plano</h2>
-    <div class="plan-cards">
-      <div class="card">
+  <div class="hero">
+    <h2>Filmes, séries, canais e esportes ao vivo em alta qualidade!</h2>
+  </div>
+
+  <div class="section">
+    <h2>Promoção por tempo limitado</h2>
+    <div class="countdown" id="countdown"></div>
+  </div>
+
+  <div class="section">
+    <h2>Planos Disponíveis</h2>
+    <div class="plans">
+      <div class="plan">
         <h3>1 Mês</h3>
-        <p class="price">R$25,00</p>
-        <div class="benefits">✔ Canais HD & Full HD<br>✔ Filmes e Séries Atualizados<br>✔ Esporte ao Vivo<br>✔ Suporte Técnico</div>
-        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%201%20mês%20por%20R%2425,00">Assinar Agora</a>
+        <p>R$ 25,00</p>
+        <p>+9.000 canais | +10.000 filmes e séries</p>
+        <a href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%201%20mês">Assinar</a>
       </div>
-      <div class="card">
+      <div class="plan">
         <h3>2 Meses</h3>
-        <p class="price">R$45,00</p>
-        <div class="benefits">✔ Tudo do plano anterior<br>✔ Acesso Estendido<br>✔ Prioridade no Suporte</div>
-        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%202%20meses%20por%20R%2445,00">Assinar Agora</a>
+        <p>R$ 45,00</p>
+        <a href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%202%20meses">Assinar</a>
       </div>
-      <div class="card">
+      <div class="plan">
         <h3>3 Meses</h3>
-        <p class="price">R$65,00</p>
-        <div class="benefits">✔ Tudo do plano anterior<br>✔ Promoções Exclusivas</div>
-        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%203%20meses%20por%20R%2465,00">Assinar Agora</a>
+        <p>R$ 65,00</p>
+        <a href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%203%20meses">Assinar</a>
       </div>
-      <div class="card">
+      <div class="plan">
         <h3>6 Meses</h3>
-        <p class="price">R$120,00</p>
-        <div class="benefits">✔ Economia de 20%<br>✔ Suporte Estendido</div>
-        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%206%20meses%20por%20R%24120,00">Assinar Agora</a>
+        <p>R$ 120,00</p>
+        <a href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%206%20meses">Assinar</a>
       </div>
-      <div class="card">
-        <h3>1 Ano</h3>
-        <p class="price">R$229,90</p>
-        <div class="benefits">✔ Melhor custo-benefício<br>✔ Suporte Premium<br>✔ Brindes Especiais</div>
-        <a class="btn" href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%201%20ano%20por%20R%24229,90">Assinar Agora</a>
+      <div class="plan">
+        <h3>12 Meses</h3>
+        <p>R$ 229,90</p>
+        <a href="https://wa.me/5577999771690?text=Quero%20assinar%20o%20plano%20de%2012%20meses">Assinar</a>
       </div>
     </div>
-    <div style="text-align:center; margin-top:30px;">
-      <a class="btn" href="https://wa.me/5577999771690?text=Quero%20testar%20o%20IPTV%20gratuitamente">Testar Grátis</a>
+  </div>
+
+  <div class="section">
+    <h2>Teste Grátis</h2>
+    <p>Quer testar antes de assinar? Clique no botão abaixo para pedir seu teste gratuito!</p>
+    <a class="plan" href="https://wa.me/5577999771690?text=Quero%20um%20teste%20grátis%20do%20IPTV">Pedir Teste Grátis</a>
+  </div>
+
+  <div class="section">
+    <h2>Guia de Instalação</h2>
+    <div class="guide">
+      <p class="device"><strong>TV LG:</strong> Max Player ou IBO Player</p>
+      <p class="device"><strong>TV Samsung:</strong> SmartOne IPTV ou Max Player</p>
+      <p class="device"><strong>TV Box:</strong> IBOR Pro ou Max Player</p>
+      <p class="device"><strong>TV Roku:</strong> IBOR Pro</p>
+      <p class="device"><strong>Philco/AOC antiga:</strong> Cloudy IPTV</p>
+      <p class="device"><strong>PC e Android:</strong> Max Player ou IBOR Pro</p>
+      <p class="device"><strong>Outros:</strong> Consulte-nos no WhatsApp</p>
     </div>
-  </section>
+  </div>
 
-  <section class="images">
-    <img src="https://images.unsplash.com/photo-1606813902524-0a4e3be2030a" alt="Família assistindo TV">
-    <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="Homem assistindo streaming">
-    <img src="https://images.unsplash.com/photo-1581092339605-c756d4fd3bfb" alt="TV Smart com filmes">
-  </section>
+  <div class="section contact">
+    <h2>Fale Conosco</h2>
+    <p>WhatsApp: <a href="https://wa.me/5577999771690">(77) 99977-1690</a></p>
+  </div>
 
-  <section class="install">
-    <h2 style="text-align:center; margin-bottom:30px;">Guia de Instalação</h2>
-    <div class="devices">
-      <div class="device">
-        <h4>TV Android / TV Box</h4>
-        <p>Apps: Max Player ou IBO Player Pro</p>
-        <a class="btn" href="https://www.youtube.com/watch?v=sh-_J5dJf4c">Ver Tutorial</a>
-      </div>
-      <div class="device">
-        <h4>TV Samsung</h4>
-        <p>Apps: Max Player ou SmartOne</p>
-        <a class="btn" href="https://www.youtube.com/watch?v=2NiGhuN-8t4">Ver Tutorial</a>
-      </div>
-      <div class="device">
-        <h4>TV Roku</h4>
-        <p>App: IBO Player Pro</p>
-        <a class="btn" href="https://www.youtube.com/watch?v=BG92t1cScBk">Ver Tutorial</a>
-      </div>
-      <div class="device">
-        <h4>Philco / AOC Antiga</h4>
-        <p>App: Clouddy</p>
-        <a class="btn" href="https://www.youtube.com/watch?v=Y7vjh_1XWCw">Ver Tutorial</a>
-      </div>
-      <div class="device">
-        <h4>Samsung Antiga</h4>
-        <p>App: Clouddy</p>
-        <a class="btn" href="https://www.youtube.com/watch?v=obotWLmg8xk">Ver Tutorial</a>
-      </div>
-      <div class="device">
-        <h4>Celular Android / iOS</h4>
-        <p>Apps: Max Player ou IBO Player Pro</p>
-        <a class="btn" href="https://www.youtube.com/watch?v=wiTz5DYtkjQ">Ver Tutorial</a>
-      </div>
-      <div class="device">
-        <h4>Computador (PC)</h4>
-        <p>Apps: Max Player ou VLC</p>
-        <a class="btn" href="https://www.youtube.com/watch?v=wiTz5DYtkjQ">Ver Tutorial</a>
-      </div>
-    </div>
-  </section>
+  <a class="whatsapp-float" href="https://wa.me/5577999771690" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-  <section class="contact">
-    <h2 style="text-align:center; margin-bottom:20px;">Fale Conosco</h2>
-    <div style="text-align:center;">
-      <a class="btn" href="https://wa.me/5577999771690">📲 Entrar em Contato pelo WhatsApp</a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>© 2025 IPTV Premium - Todos os direitos reservados.</p>
+  <footer>
+    &copy; 2025 JS XPLAY IPTV. Todos os direitos reservados.
   </footer>
+
+  <script>
+    // Contagem regressiva promocional
+    const countdown = document.getElementById("countdown");
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 3); // 3 dias de promoção
+
+    setInterval(() => {
+      const now = new Date();
+      const distance = targetDate - now;
+      if (distance < 0) {
+        countdown.innerHTML = "Promoção encerrada!";
+        return;
+      }
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      countdown.innerHTML = `Faltam ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
 </body>
 </html>

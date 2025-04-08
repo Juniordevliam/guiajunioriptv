@@ -153,7 +153,7 @@
 
   <div class="section">
     <h2>Assista quando quiser</h2>
-    <img src="https://cdn.pixabay.com/photo/2016/03/23/01/12/technology-1276261_960_720.jpg" alt="dispositivos">
+    <img src="https://vodlix.com/assets/website_images/home/hero-homepage-1.png" alt="dispositivos">
   </div>
 
   <div class="section">

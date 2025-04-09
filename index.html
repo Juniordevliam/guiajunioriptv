@@ -24,7 +24,7 @@
       color: red;
     }
     header {
-      background-image: url('![computador-teste-iptv](https://github.com/user-attachments/assets/ac837671-01a4-48cb-8db3-19e8d7bc9bd8)
+      background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpodpop.com.br%2FPodPOP%2Fseries-disponiveis-no-starzplay-filmes%2F&psig=AOvVaw3KpIsvHG_J0-gErfSH678s&ust=1744328265948000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjphb-PzIwDFQAAAAAdAAAAABAE')
 ');
       background-size: cover;
       background-position: center;

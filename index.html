@@ -24,7 +24,8 @@
       color: red;
     }
     header {
-      background-image: url('https://e0.pxfuel.com/wallpapers/131/465/desktop-wallpaper-live-tv-television.jpg');
+      background-image: url('![computador-teste-iptv](https://github.com/user-attachments/assets/ac837671-01a4-48cb-8db3-19e8d7bc9bd8)
+');
       background-size: cover;
       background-position: center;
       padding: 100px 20px;

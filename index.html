@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <div class="logo">JS <span>XPLAY</span></div>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ELITE PLAY - Sua IPTV Completa</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-  .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .logo span {
-    color: red;
-  }
-</style>
   <style>
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
       background-color: #000;
       color: #fff;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      padding: 20px;
+    }
+    .logo span {
+      color: red;
     }
     header {
       background-image: url('https://e0.pxfuel.com/wallpapers/131/465/desktop-wallpaper-live-tv-television.jpg');
@@ -135,34 +132,36 @@
   </style>
 </head>
 <body>
+  <div class="logo">JS <span>XPLAY</span></div>
+
   <header>
-    <h1>Canais, Filmes, Séries e muito mais. <span>Sem limites.</span></h1>
+    <h1>🎞️ Canais, 🍿 Filmes, 🎬 Séries e ⚽ Esportes! <span>Tudo em um só lugar.</span></h1>
     <div class="countdown" id="countdown"></div>
     <a href="https://wa.me/5577999771690?text=Quero%20assinar%20a%20ELITE%20PLAY" class="btn-main">QUERO ASSISTIR TODOS OS CANAIS</a>
   </header>
 
   <div class="section">
-    <h2>Aproveite na TV</h2>
+    <h2>📺 Aproveite na TV</h2>
     <img src="https://vodlix.com/assets/customer-profiles.png" alt="tv devices">
   </div>
 
   <div class="section">
-    <h2>Assista filmes e séries</h2>
+    <h2>🍿 Assista filmes e séries</h2>
     <img src="https://bmcnews.com.br/wp-content/uploads/2024/09/netflix_1726847503266-1.jpg" alt="filmes">
   </div>
 
   <div class="section">
-    <h2>Assista quando quiser</h2>
+    <h2>⏱ Assista quando quiser</h2>
     <img src="https://vodlix.com/assets/group-683.jpg" alt="dispositivos">
   </div>
 
   <div class="section">
-    <h2>Brasileirão e esportes</h2>
+    <h2>⚽ Brasileirão e esportes ao vivo</h2>
     <img src="https://tntsports.com.br/__export/1681562991776/sites/esporteinterativo/img/2023/04/15/14-04-futbr-ed-2.png_554688468.png" alt="esportes">
   </div>
 
   <div class="section">
-    <h2>Escolha seu plano</h2>
+    <h2>✨ Escolha seu plano</h2>
     <div class="plans">
       <div class="plan">
         <h3>Mensal</h3>
@@ -198,7 +197,8 @@
           <li>Bônus exclusivos</li>
         </ul>
         <a class="btn-main" href="https://wa.me/5577999771690?text=Quero%20o%20plano%206%20meses%20da%20ELITE%20PLAY">ASSINAR</a>
-        <div class="plan">
+      </div>
+      <div class="plan">
         <h3>ANUAL</h3>
         <p><s>R$ 360,00</s> <strong>R$ 249,90</strong></p>
         <ul>
@@ -208,17 +208,23 @@
           <li>Suporte técnico</li>
           <li>Bônus exclusivos</li>
         </ul>
-        <a class="btn-main" href="https://wa.me/5577999771690?text=Quero%20o%20plano%206%20meses%20da%20ELITE%20PLAY">ASSINAR</a>
-      
+        <a class="btn-main" href="https://wa.me/5577999771690?text=Quero%20o%20plano%20anual%20da%20ELITE%20PLAY">ASSINAR</a>
+      </div>
+    </div>
   </div>
 
   <div class="section faq">
     <h2>Perguntas frequentes</h2>
-    <p><strong>O que é IPTV via app?</strong><br>É um serviço de transmissão de TV pela internet sem necessidade de antena.</p>
-    <p><strong>Quais dispositivos são compatíveis?</strong><br>TVs Smart Samsung e LG, Android TV Box, Roku, AOC antiga, Philco, PC e celular.</p>
-    <p><strong>Como faço para instalar?</strong><br>Você receberá um tutorial personalizado com passo a passo e link para baixar o app certo para seu dispositivo.</p>
-    <p><strong>Tem suporte se eu tiver dúvidas?</strong><br>Sim! Nosso atendimento é direto via WhatsApp com suporte rápido.</p>
-    <p><strong>Posso assistir canais de esportes e campeonatos?</strong><br>Sim, você terá acesso a canais de esportes com jogos ao vivo.</p>
+    <p><strong>O que é IPTV via app?</strong><br>
+    É um serviço de transmissão de TV pela internet sem necessidade de antena.</p>
+    <p><strong>Quais dispositivos são compatíveis?</strong><br>
+    TVs Smart Samsung e LG, Android TV Box, Roku, AOC antiga, Philco, PC e celular.</p>
+    <p><strong>Como faço para instalar?</strong><br>
+    Você receberá um tutorial personalizado com passo a passo e link para baixar o app certo para seu dispositivo.</p>
+    <p><strong>Tem suporte se eu tiver dúvidas?</strong><br>
+    Sim! Nosso atendimento é direto via WhatsApp com suporte rápido.</p>
+    <p><strong>Posso assistir canais de esportes e campeonatos?</strong><br>
+    Sim, você terá acesso a canais de esportes com jogos ao vivo.</p>
   </div>
 
   <footer>

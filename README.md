@@ -209,9 +209,7 @@
           <li>Bônus exclusivos</li>
         </ul>
         <a class="btn-main" href="https://wa.me/5577999771690?text=Quero%20o%20plano%206%20meses%20da%20ELITE%20PLAY">ASSINAR</a>
-        
-      </div>
-    </div>
+      
   </div>
 
   <div class="section faq">

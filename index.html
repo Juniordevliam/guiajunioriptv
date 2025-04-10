@@ -24,8 +24,7 @@
       color: red;
     }
     header {
-      background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg)
-');
+      background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg');
       background-size: cover;
       background-position: center;
       padding: 100px 20px;

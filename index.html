@@ -24,7 +24,7 @@
       color: red;
     }
     header {
-      background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpodpop.com.br%2FPodPOP%2Fseries-disponiveis-no-starzplay-filmes%2F&psig=AOvVaw3KpIsvHG_J0-gErfSH678s&ust=1744328265948000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjphb-PzIwDFQAAAAAdAAAAABAE')
+      background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg)
 ');
       background-size: cover;
       background-position: center;
